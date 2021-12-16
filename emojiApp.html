@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
+    <title>Emoji personality</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="users-container" id="users-container">
+            <h3>Saved users</h3>
+            <div class="users-el" id="users-el"></div>
+            <button class="btn clear-user" id="clear-user-btn">Delete last user</button>
+        </div>
+
+        <div class="intro-container" id="intro-container">
+            <h1>Tell us you personality with emojis <br>🤘</h1>
+
+            <div class="ask-name-container" id="ask-name-container">
+                <input type="text" placeholder="What's your name?" class="input" id="ask-name-input">
+                <button class="btn" id="submit-name-btn"> Submit </button>
+                <p class="valid-name-el" id="type-name-el"></p>
+            </div>
+        </div>
+
+        <div class="main-content" id="main-content">
+            <h2 id="user-name">User's Emojis</h2>
+            <div class="emojis-container" id="emojis-container"></div>
+
+            <div class="emojis-functions">
+                <div class="btn-letf btn-flex">
+                    <button title="Add emoji to beginning" class="btn-app" id="unshift-btn">+</button>
+                    <button title="Remove emoji from beginning" class="btn-app" id="shift-btn">-</button>
+                </div>
+                <input type="text" placeholder="Write an emoji 😋" class="input" id="emojis-input">
+                <div class="btn-right btn-flex">
+                    <button title="Add emoji to end" class="btn-app" id="push-btn">+</button>
+                    <button title="Remove emoji from beginning" class="btn-app" id="pop-btn" >-</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn go-back" id="go-back"> Go back </button>
+
+        <a href="https://getemoji.com/" target="_blank" class="btn emojisSite" id="emojisSite">Get Emojis from here</a>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
